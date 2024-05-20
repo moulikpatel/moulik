@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+ width: 100%;
+ height: 100%;
+}
+.top{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.top i{
+    color: orange;
+}
+.navbar{
+    background-color: rgb(75, 73, 73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.navele{
+    display: flex;
+    gap:40px;
+    margin-right: 10px;
+    height: auto;
+}
+.navele p{
+    cursor: pointer;
+}
+.navele p:hover{
+    color: orange;
+    
+}
+.hero img{
+    height: 90%;
+    width: 100vw;
+    filter: blur(6px);
+    position:absolute;
+
+}
+.hero h1{
+    position:relative;
+    top:200px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+.hero p{
+    position: relative;
+    top:230px;
+    left: 20px;
+    color: white;
+}
+.icons{
+    position: relative;
+}
+#left{
+    font-size: 40px;
+    position:relative;
+    top:120px;
+    background-color: gray;
+    width:20px;
+    opacity: 0.6;
+}
+#right{
+    font-size: 40px;
+    position:absolute;
+    top:120px;
+    background-color: gray;
+    width:20px;
+    opacity: 0.6;
+    right: 0;
+
+}
+.dropdown{
+    position: relative;
+
+}
+.dropdown button{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    opacity: 0.6;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.dropdown:hover .dropdowncontent{
+    display: block;
+} 
+.dropdowncontent{
+    background-color: orange;
+    position: absolute;
+    top:50px;
+    width:200px;
+    height: 400px;
+    z-index: 1;
+    opacity: 0.7;
+    display: none;
+
+}
+.dropdowncontent p{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    cursor: pointer;
+}
+.sec1{
+    position: relative;
+    top:450px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    transform: translatey(100%);
+    transition: all 2s ease;
+}
+.sec1.show-animate{
+    transform: translateX(0);
+    
+}
+.sec1img img{
+    height: 400px;
+    margin-left: 30px;
+}
+.sec1cont{
+    height:400px;
+    box-shadow: 1px 5px 8px;
+    margin-right: 30px;
+    text-align: center;
+}
+.sec1cont h1{
+    margin-top: 10px;
+}
+.sec1cont hr{
+    width: 30%;
+    margin-left: 220px;
+    border: 1px solid orange;
+}
+.sec1cont p{
+    margin-top: 50px;
+    text-align: justify;
+}
+.sec1cont button{
+    margin-top: 80px;
+    height: 60px;
+    width: 120px;
+    background-color: orange;
+    border: none;
+    color: white;
+    
+}
+.sec2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+.sec3.show-animate{
+    transform: translateX(0);
+}
+.sec2 img{
+    position: absolute;
+    top:390px;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(6px);
+}
+.form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:450px;
+    flex-direction: column;
+}
+.form h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.form input{
+    margin-top: 20px;
+    height: 40px;
+    width: 350px;
+}
+.form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 350px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+}
+.sec3{
+    position: relative;
+    margin-top: 400px;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(80%);
+    transition: all 2s ease-out;
+}
+.sec3 h1{
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.sec3 hr{
+    width:15%;
+    margin-left: 548px;
+    border: 1px solid orange;
+}
+.sec3 p{
+    margin-top: 20px;
+    text-align: justify;
+    overflow: hidden;
+}
+.images{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.images img{
+    height:400px;
+}
+@media(max-width:550px){
+    .top p{
+        font-size: 10px;
+    }
+    #heroimg{
+        height:400px;
+    }
+    .navele{
+        gap:20px;
+    }
+    .navele p{
+        font-size: 7px;
+    }
+    .navbar{
+        display: none;
+       }
+       .dropdown button{
+        display: block;
+       }
+    .sec1img img{
+        height: 280px;
+        margin-left: 20px;
+        width: 370px;
+        margin-top: 10px;
+    }
+    .sec1cont{
+        height: 280px;
+        margin-left: 20px;
+    }
+    .sec1cont p{
+        position: relative;
+        bottom: 40px;
+        font-size: 15px;
+
+    }
+    .sec1cont button{
+        height: 30px;
+        width: 70px;
+        position: relative;
+        bottom: 115px;
+    }
+    .sec1cont hr{
+        position: relative;
+        right: 130px;
+    }
+    .sec1{
+        margin-top: 10px;
+        flex-direction: column-reverse;
+    }
+    .sec2{
+        margin-top: 100px;
+    }
+    .sec2 h1{
+        font-size: 20px;
+    }
+    .form input{
+    
+        width: 250px;
+        height: 20px;
+    }
+    .form button{
+        width:70px;
+        height: 30px;
+        margin-bottom: 130px;
+    }
+    .sec2 img{
+        height:400px;
+    }
+    .sec3{
+        top:0;
+        margin-top: 0px;
+    }
+    .images{
+        margin-left: 30px;
+    }
+    .images img{
+        height:170px;
+
+
+    }
+}
+@media(max-width:330px){
+    .top p{
+        font-size: 8px;
+    }
+   .sec1img img{
+    height: 200px;
+    }
+    .sec1cont{
+    height: 200px;
+    margin-right: 20px;
+    }
+    .sec1cont p{
+    font-size: 5px;
+    }
+    .sec1cont button{
+    height: 40px;
+    width: 80px;
+    position: relative;
+    bottom: 60px;
+    }
+    .sec1cont hr{
+        position: relative;
+        right: 130px;
+    }
+}
